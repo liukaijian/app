@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>todolist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body id="body">
+	<header id="header">
+		<nav>待办事项列表</nav>
+	</header>
+	<form id="from_block">
+		<div>
+			<input type="text" name="" placeholder="请写下待办事项" id="text">
+		</div>
+		<div>
+			<input type="button" id="submit" name="" value="提交">
+		</div>
+	</form>
+	<div id="list">
+		<ul>
+			<li class="list_type">
+				<div>
+					<span class="red">进行中</span><span id="active_num">0</span>
+				</div>
+				<ul id="active_list">
+					
+				</ul>
+			</li>
+			<li class="list_type">
+				<div>
+					<span class="green">已完成</span><span id="over_num">0</span>
+				</div>
+				<ul id="over_list">
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="show_Write">
+		<div id="center">
+			<form>
+				<ul>
+					<li><textarea id="change_text"></textarea></li>
+					<li><input id type="button" name="" value="确定"></li>
+					<li><input type="button" name="" value="取消"></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
